@@ -178,6 +178,8 @@ class Bsblan extends utils.Adapter {
     }
 
     async setupObject(key, param, value) {
+        this.log.debug(`setupObject: key=${key}`);
+        this.log.debug(`setupObject: param=${param}`);
         let name = param.name + " (" + key + ")";
 
         this.log.info("Add Parameter: " + name);
